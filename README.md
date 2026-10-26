@@ -133,7 +133,7 @@ The work area used to fit the window comes from the monitor of the saved rectang
 | Node | `>= 22` |
 | OS | Windows 11 (tested); Windows 10 untested; macOS and Linux unsupported |
 | Profile | `desktop` |
-| Runtime | Host plugin, `koffi` FFI to `user32` |
+| Runtime | Host plugin, Win32 through the `koffi` copy included with DSH |
 | Catalog | [listed on dsh-plugin.org](https://dsh-plugin.org/plugins/jamolpe88/dsh-desktop-windowstatus-saving) |
 
 Validation status: **tested on Windows 11 with DSH Desktop 0.2.1-rc.3** (2026-10-26) across normal restarts, maximized restarts, maximize → minimize → quit, tray quit, and a two-display layout with negative coordinates. The state file reported `restore.whileHidden: true` after the restarts, and the saved geometry matched the live window.
@@ -191,7 +191,7 @@ dsh plugin --profile desktop add C:\path\to\dsh-desktop-windowstatus-saving
 
 ## Third-party
 
-The plugin depends on [koffi](https://koffi.dev/) 3.1.1 (MIT, Niels Martignène) for FFI. No other runtime dependency is bundled.
+The plugin uses the copy of [koffi](https://koffi.dev/) 3.1.1 (MIT, Niels Martignène) that ships with DeepSeek Harness Desktop, so installing this package does not build or download any native dependency. The repository keeps koffi as a dev dependency for the Win32 test suite.
 
 ## License
 

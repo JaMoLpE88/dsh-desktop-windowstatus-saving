@@ -8,6 +8,10 @@ koffi 3.1.1
 Copyright (c) 2020-2026 Niels Martignène
 MIT license — https://github.com/Koromix/koffi
 
+koffi is included with DeepSeek Harness Desktop and resolved from the
+application runtime; it is not bundled with, downloaded by, or built by this
+package.
+
 The icon (icon.svg) and the illustrations in assets/ were created for this
 project and are covered by the same MIT license. The window mockups are
 illustrations, not captures of the DeepSeek Harness interface.

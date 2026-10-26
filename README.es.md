@@ -133,7 +133,7 @@ El área de trabajo que se usa para encajar la ventana procede del monitor del r
 | Node | `>= 22` |
 | SO | Windows 11 (probado); Windows 10 sin probar; macOS y Linux no soportados |
 | Perfil | `desktop` |
-| Runtime | Plugin Host, FFI de `koffi` a `user32` |
+| Runtime | Plugin Host, Win32 mediante la copia de `koffi` incluida en DSH |
 | Catálogo | [publicado en dsh-plugin.org](https://dsh-plugin.org/plugins/jamolpe88/dsh-desktop-windowstatus-saving) |
 
 Estado de validación: **probado en Windows 11 con DSH Desktop 0.2.1-rc.3** (2026-10-26) con reinicios normales, reinicios maximizado, maximizar → minimizar → cerrar, salida desde la bandeja y una configuración de dos monitores con coordenadas negativas. El archivo de estado registró `restore.whileHidden: true` tras los reinicios y la geometría guardada coincidía con la ventana viva.
@@ -191,7 +191,7 @@ dsh plugin --profile desktop add C:\ruta\a\dsh-desktop-windowstatus-saving
 
 ## Terceros
 
-El plugin depende de [koffi](https://koffi.dev/) 3.1.1 (MIT, Niels Martignène) para la FFI. No se empaqueta ninguna otra dependencia de runtime.
+El plugin usa la copia de [koffi](https://koffi.dev/) 3.1.1 (MIT, Niels Martignène) que incluye DeepSeek Harness Desktop, así que instalar este paquete no compila ni descarga ninguna dependencia nativa. El repositorio mantiene koffi como dependencia de desarrollo para la suite de pruebas de Win32.
 
 ## Licencia
 
