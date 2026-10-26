@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Window status saving",
+    "description": "Remembers the desktop window's size, position and maximized state, and restores them the next time DeepSeek Harness Desktop starts."
+  }
+}

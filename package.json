@@ -1,0 +1,68 @@
+{
+  "name": "@jamolpe88/dsh-desktop-windowstatus-saving",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness Desktop plugin that remembers the main window's size, position and maximized state and restores them before the window is painted.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "assets/*.png",
+    "README.md",
+    "README.es.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "NOTICE",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "dependencies": {
+    "koffi": "3.1.1"
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/win32.js && node --check lib/geometry.js && node --check lib/store.js && node --check lib/window-state.js",
+    "test": "node --test --test-isolation=none"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "cordis",
+    "desktop",
+    "window",
+    "window-state",
+    "window-size",
+    "window-position",
+    "win32"
+  ],
+  "author": "JaMoLpE88",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaMoLpE88/dsh-desktop-windowstatus-saving.git"
+  },
+  "homepage": "https://github.com/JaMoLpE88/dsh-desktop-windowstatus-saving#readme",
+  "bugs": {
+    "url": "https://github.com/JaMoLpE88/dsh-desktop-windowstatus-saving/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Memoria de la ventana",
+    "description": "Guarda el tamaño, la posición y el estado maximizado de la ventana y los restaura la próxima vez que se abre DeepSeek Harness Desktop."
+  }
+}
