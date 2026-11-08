@@ -11,10 +11,6 @@
   pnpm to run a native build script, so `dsh plugin add` works in one step.
 - Keep `koffi` as a dev dependency for the test suite.
 
-## 0.1.2 — 2026-11-08
-
-- Repository hygiene: added ignore rules for local agent/planning files. No functional changes.
-
 ## 0.1.0 — 2026-10-26
 
 First release.
