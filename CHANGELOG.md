@@ -1,11 +1,19 @@
 # Changelog
 
+## 0.1.2 — 2026-11-08
+
+- Repository hygiene: added ignore rules for local agent/planning files. No functional changes.
+
 ## 0.1.1 — 2026-10-26
 
 - Use the `koffi` copy bundled with DeepSeek Harness Desktop instead of
   declaring it as a runtime dependency. Installing the package no longer asks
   pnpm to run a native build script, so `dsh plugin add` works in one step.
 - Keep `koffi` as a dev dependency for the test suite.
+
+## 0.1.2 — 2026-11-08
+
+- Repository hygiene: added ignore rules for local agent/planning files. No functional changes.
 
 ## 0.1.0 — 2026-10-26
 

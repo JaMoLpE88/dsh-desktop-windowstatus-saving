@@ -1,6 +1,6 @@
 {
   "name": "@jamolpe88/dsh-desktop-windowstatus-saving",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DeepSeek Harness Desktop plugin that remembers the main window's size, position and maximized state and restores them before the window is painted.",
   "type": "module",
   "main": "lib/index.js",
