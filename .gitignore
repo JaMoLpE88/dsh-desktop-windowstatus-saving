@@ -2,3 +2,15 @@ node_modules/
 .npm-cache/
 package-lock.json
 *.tgz
+
+# Agent and planning artifacts (never committed)
+docs/superpowers/
+docs/plans/
+.superpowers/
+.research/
+.artifacts/
+.claude/
+.cursor/
+.codex/
+AGENTS.md
+CLAUDE.md
